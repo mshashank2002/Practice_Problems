@@ -9,5 +9,5 @@ else decrement count.
 Step 2 – Check if the candidate has more than N/2 counts –
 
 Initialize a variable count =0 and increment count if it is the same as the candidate.
-If the count is >N/2, return the candidate.
+If the count is >N/2, return the count
 else return -1.
