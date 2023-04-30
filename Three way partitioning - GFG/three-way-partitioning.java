@@ -102,42 +102,8 @@ class Solution{
     //that array is divided into three parts.
     public void threeWayPartition(int array[], int a, int b)
     {
-        int n=array.length;
-        int k=0;
-        int[] c=new int[n];
-        for(int i=0;i<n;i++)
-        {
-            if(array[i]<a)
-            {
-                c[k]=array[i];
-                k++;
-            }
-        }
-        
-        for(int i=0;i<n;i++)
-        {
-            if(array[i]>=a&&array[i]<=b)
-            {
-                c[k]=array[i];
-                k++;
-            }
-        }
-        
-        for(int i=0; i<n;i++)
-        {
-            if(array[i]>b)
-            {
-            c[k]=array[i];
-            k++;
-            }
-        }
-         for(int i=0; i<n;i++)
-         {
-            array[i]=c[i];
-    
-             
-         }
-}
+       Arrays.sort(array);
+    }
 }
         
 
